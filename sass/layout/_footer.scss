@@ -1,0 +1,49 @@
+.contacts-footer .link-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--contact-footer-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.content {
+  background-color: var(--context-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-link {
+  margin-bottom: 9px;
+}
+
+address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.main-footer-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: baseline;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-wrapper {
+  margin-right: 70px;
+}
