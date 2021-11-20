@@ -52,16 +52,47 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section-title {
@@ -265,6 +296,12 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}
+
 .activity__list {
   display: flex;
 }
@@ -295,16 +332,48 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.advantages {
-  padding-bottom: 0;
+.advantages__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-color);
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .advantages__list {
-  display: flex;
+  margin-bottom: -30px;
 }
 
-.advantages__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    display: flex;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .advantages__item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    width: 270px;
+  }
 }
 
 .advantages__title {
@@ -315,6 +384,13 @@ body {
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    text-align: left;
+  }
 }
 
 .advantages__descr {
@@ -322,25 +398,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  max-width: 270px;
-  margin-right: 10px;
-}
-
-.advantages__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--button-color);
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-}
-
-.advantages__icon {
-  width: 70px;
-  height: 70px;
+  width: 100%;
 }
 
 .team {
