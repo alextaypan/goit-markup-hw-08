@@ -1254,13 +1254,13 @@ address {
   border-radius: 4px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-text::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-text:focus {
@@ -1268,11 +1268,17 @@ address {
 }
 
 .policy-wrap {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .policy-wrap {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-wrap {
@@ -1283,6 +1289,13 @@ address {
 
 .check-link {
   color: var(--accent-color);
+}
+
+.modal-field-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .check-text .text-wrap {
@@ -1301,15 +1314,8 @@ address {
   border: none;
 }
 
-.input-icon-check {
+.icon-check {
   fill: var(--background-color);
-}
-
-.modal-field-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
 }
 
 .modal-button {
