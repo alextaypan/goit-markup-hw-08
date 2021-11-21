@@ -105,13 +105,8 @@ body {
 
 .page-header {
   border-bottom: 1px solid var(--border-color);
-}
-
-@media screen and (min-width: 480px) {
-  .page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -128,34 +123,57 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header-container {
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
   }
 }
 
 .site-nav {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
-.nav-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+    margin-left: 88px;
+    margin-right: 75px;
+  }
 }
 
-.contacts-header {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 305px;
+  }
 }
 
-.header-item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .header-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.header-item:first-child {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .header-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-item:first-child {
+    margin-left: 93px;
+  }
 }
 
 .item {
@@ -199,14 +217,32 @@ body {
   border-radius: 2px;
 }
 
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-button:hover, .menu-button:focus {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .container-nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container-nav:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .container-nav:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .link {
@@ -226,25 +262,97 @@ body {
 
 .nav-icon {
   fill: currentColor;
-  margin-right: 10px;
 }
 
-.nav-icon-phone {
-  width: 10px;
-  height: 16px;
+@media screen and (min-width: 768px) {
+  .nav-icon {
+    margin-right: 8px;
+  }
 }
 
-.contacts-header .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--title-text-color);
+@media screen and (min-width: 1200px) {
+  .nav-icon {
+    margin-right: 10px;
+  }
 }
 
-.contact-item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .nav-icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-icon-phone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-icon-phone {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.contacts-header {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-header {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--title-text-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .logo {
