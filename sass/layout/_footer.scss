@@ -1,16 +1,21 @@
-// .main-footer-container {
-//   max-width: 1200px;
-//   display: flex;
-//   align-items: baseline;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
-
 .main-footer-container {
-  width: 480px;
-  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    text-align: center;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+    text-align: left;
   }
 }
 
@@ -21,6 +26,9 @@
     align-items: baseline;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-wrapper {
@@ -28,6 +36,9 @@
   @media screen and (min-width: 768px) {
     margin-right: 165px;
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
   }
 }
 
@@ -49,6 +60,9 @@
 
 .footer-link:not(:last-child) {
   margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .content {
@@ -57,10 +71,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-// .footer-link {
-//   margin-bottom: 9px;
-// }
 
 address {
   font-style: normal;
@@ -71,9 +81,7 @@ address {
 
   margin-top: 20px;
   margin-bottom: 8px;
-  // margin-bottom: 9px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
-
-// .footer-wrapper {
-//   margin-right: 70px;
-// }

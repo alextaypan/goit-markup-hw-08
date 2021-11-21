@@ -1,6 +1,8 @@
-// .footer-social-links {
-//   margin-right: 93px;
-// }
+.footer-social-links {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
 
 .footer-nav-list {
   display: flex;
@@ -14,8 +16,8 @@
 
 .footer-item-list {
   display: flex;
-  // justify-content: center;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   &:not(:last-child) {
