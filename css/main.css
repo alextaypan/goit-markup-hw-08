@@ -738,7 +738,16 @@ body {
   border-left: 1px solid #eeeeee;
 }
 
-.contacts-footer .link-item {
+.main-footer-container {
+  width: 480px;
+  text-align: center;
+}
+
+.footer-wrapper {
+  margin-bottom: 60px;
+}
+
+.link-item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -749,18 +758,18 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-footer .link-item:hover, .contacts-footer .link-item:focus {
+.link-item:hover, .link-item:focus {
   color: var(--accent-color);
+}
+
+.footer-link:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .content {
   background-color: var(--context-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-link {
-  margin-bottom: 9px;
 }
 
 address {
@@ -770,19 +779,7 @@ address {
   letter-spacing: 0.03em;
   color: var(--background-color);
   margin-top: 20px;
-  margin-bottom: 9px;
-}
-
-.main-footer-container {
-  max-width: 1200px;
-  display: flex;
-  align-items: baseline;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.footer-wrapper {
-  margin-right: 70px;
+  margin-bottom: 8px;
 }
 
 .button-send-footer {
@@ -796,6 +793,7 @@ address {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .button-title {
@@ -807,20 +805,20 @@ address {
   color: var(--background-color);
 }
 
-.footer-social-links {
-  margin-right: 93px;
-}
-
 .footer-nav-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .footer-item-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
+}
+
+.footer-item-list:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -858,17 +856,24 @@ address {
 }
 
 .form-footer {
-  margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .modal-input-footer {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(71, 9, 9, 0.15));
   border-radius: 4px;
   background-color: transparent;
   outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-input-footer {
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .modal-input-footer::placeholder {
@@ -884,9 +889,6 @@ address {
 }
 
 .form-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
