@@ -9,10 +9,26 @@
 .main-footer-container {
   width: 480px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+}
+
+.second-footer-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-wrapper {
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
 }
 
 .link-item {

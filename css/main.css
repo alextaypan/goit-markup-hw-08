@@ -743,8 +743,30 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .main-footer-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .second-footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+}
+
 .footer-wrapper {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
 }
 
 .link-item {
@@ -810,6 +832,12 @@ address {
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-nav-list {
+    margin-bottom: 0;
+  }
 }
 
 .footer-item-list {
