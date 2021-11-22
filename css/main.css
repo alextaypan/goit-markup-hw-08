@@ -356,18 +356,18 @@ body {
   color: var(--background-color);
 }
 
-.menu-button {
+.menu-open {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.menu-button:hover, .menu-button:focus {
+.menu-open:hover, .menu-open:focus {
   fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-open {
     display: none;
   }
 }
@@ -453,6 +453,7 @@ body {
 @media screen and (min-width: 1200px) {
   .activity {
     display: block;
+    padding-top: 0;
   }
 }
 
