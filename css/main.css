@@ -369,6 +369,12 @@ body {
   padding-left: 40px;
 }
 
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .menu-close {
   display: flex;
   top: 10;
@@ -381,6 +387,28 @@ body {
 
 .menu-close:hover {
   fill: var(--accent-color);
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.main-link-current {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .menu-open {
