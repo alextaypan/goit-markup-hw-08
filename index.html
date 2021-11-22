@@ -155,25 +155,33 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list activity__list">
             <li class="activity__item">
-              <img
-                src="images/activity1.jpg"
+              <picture>
+                <source srcset="./images/activity1.jpg 1x, ./images/activity/img-desktop-2x-1.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <img
+                src="./images/activity1.jpg"
                 alt="Клавиатура, руки и планшет"
-                width="370"
-                height="294"
               />
+              </picture>
               <h3 class="activity__name">Десктопные приложения</h3>
             </li>
             <li class="activity__item">
+              <picture>
+                <source srcset="./images/activity2.jpg 1x, ./images/activity/img-desktop-2x-2.jpg 2x"
+                media="(min-width: 1200px)"/>
               <img
-                src="images/activity2.jpg"
+                src="./images/activity2.jpg"
                 alt="Телефон, руки и ноутбук"
-                width="370"
-                height="294"
               />
+              </picture>
               <h3 class="activity__name">Мобильные приложения</h3>
             </li>
             <li class="activity__item">
-              <img src="images/activity3.jpg" alt="Руки и планшет" width="370" height="294" />
+              <picture>
+                <source srcset="./images/activity3.jpg 1x, ./images/activity/img-desktop-2x-3.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <img src="images/activity3.jpg" alt="Руки и планшет" />
+              </picture>
               <h3 class="activity__name">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -185,12 +193,18 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                src="images/member1.jpg"
+              <picture>
+                <source srcset="./images/member1.jpg 1x, ./images/team/img1-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/team/img1-tablet-1x.jpg 1x, ./images/team/img1-tablet-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/team/img1-mob-1x.jpg 1x, ./images/team/img1-mob-2x.jpg 2x"
+                media="(min-width: 320px)"/>
+                <img
+                src="./images/member1.jpg"
                 alt="Мужчина в бордовой рубашке и очках"
-                width="270"
-                height="260"
               />
+              </picture>
                 <h3 class="team__member">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
               <ul class="list team-wrapper">
@@ -225,12 +239,18 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="images/member2.jpg"
+              <picture>
+                <source srcset="./images/member2.jpg 1x, ./images/team/img2-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/team/img2-tablet-2x.jpg 1x, ./images/team/img2-tablet-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/team/img2-mob-1x.jpg 1x, ./images/team/img2-mob-2x.jpg 2x"
+                media="(min-width: 320px)"/>
+                <img
+                src="./images/member2.jpg"
                 alt="Женщина в пиджаке и очках"
-                width="270"
-                height="260"
               />
+              </picture>
                 <h3 class="team__member">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
               <ul class="list team-wrapper">
@@ -265,12 +285,18 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="images/member3.jpg"
+              <picture>
+                <source srcset="./images/member3.jpg 1x, ./images/team/img3-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/team/img3-tablet-2x.jpg 1x, ./images/team/img3-tablet-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/team/img3-mob-1x.jpg 1x, ./images/team/img3-mob-2x.jpg 2x"
+                media="(min-width: 320px)"/>
+                <img
+                src="./images/member3.jpg"
                 alt="Мужчина в голубой рубашке"
-                width="270"
-                height="260"
               />
+              </picture>
                 <h3 class="team__member">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
               <ul class="list team-wrapper">
@@ -305,12 +331,18 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="images/member4.jpg"
-                alt="Мужчина в черной футболке и очках"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/member4.jpg 1x, ./images/team/img4-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/team/img4-tablet-2x.jpg 1x, ./images/team/img4-tablet-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/team/img4-mob-1x.jpg 1x, ./images/team/img4-mob-2x.jpg 2x"
+                media="(min-width: 320px)"/>
+                <img
+                src="./images/member4.jpg"
+                alt="Мужчина в черной футболке и очках" />
+              </picture>
+
                 <h3 class="team__member">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
               <ul class="list team-wrapper">
