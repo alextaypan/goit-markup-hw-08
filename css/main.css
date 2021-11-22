@@ -356,13 +356,40 @@ body {
   color: var(--background-color);
 }
 
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+}
+
+.menu-close {
+  display: flex;
+  top: 10;
+  right: 15;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-close:hover {
+  fill: var(--accent-color);
+}
+
 .menu-open {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.menu-open:hover, .menu-open:focus {
+.menu-open:hover {
   fill: var(--accent-color);
 }
 
@@ -1153,6 +1180,7 @@ address {
 }
 
 .is-hidden {
+  display: none;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
