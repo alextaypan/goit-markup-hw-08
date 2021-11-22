@@ -17,6 +17,13 @@ body {
   margin: -1px;
 }
 
+.is-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;

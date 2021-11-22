@@ -51,6 +51,13 @@ body {
   margin: -1px;
 }
 
+.is-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -367,6 +374,7 @@ body {
   padding-right: 15px;
   padding-bottom: 48px;
   padding-left: 40px;
+  z-index: 2;
 }
 
 .main-menu {
@@ -1257,13 +1265,6 @@ address {
     justify-content: center;
     align-items: center;
   }
-}
-
-.is-hidden {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .backdrop {
